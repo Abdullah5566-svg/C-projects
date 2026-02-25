@@ -7,8 +7,10 @@
 namespace fs = std::filesystem;
 using namespace std;
 int main()
-{
-  int option;
+{int Choice;
+  do
+  {
+    int option;
   cout << "FILE MANAGEMENT SYSTEM\n";
   cout << "----------------------\n";
   cout << "\n1. write and create a file";
@@ -262,4 +264,14 @@ int main()
     cout << "\nSystem SHUTING DOWN !";
     return 0;
   }
+  else{
+    cout<<"invalid option !"<<endl;
+
+  }
+cout<<"DO you want to continue : 0 == No, 1 == yes";
+cin>>Choice;
+  
 }
+  
+while(Choice==1);
+  }
